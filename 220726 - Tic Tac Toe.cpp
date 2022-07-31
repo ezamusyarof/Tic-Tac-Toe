@@ -1,4 +1,5 @@
 #include <iostream>
+#include <time.h>
 #include <Windows.h>
 using namespace std;
 
@@ -133,6 +134,7 @@ void pemenang(){
 }
 
 void game(){
+	srand(time(0));
 	while(true){
 		int boot, cur;
 		boot = 1 + rand()%9;
